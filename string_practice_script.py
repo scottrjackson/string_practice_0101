@@ -33,3 +33,30 @@ example_sentence.find("z")
 example_sentence.index("s", 6) # works the same when it's there
 example_sentence.index("z")
 
+# grab surrounding text
+search_word = "spam"
+
+with open("spam_song.txt") as fc:
+    spam_song = fc.read()
+
+type(spam_song)
+len(spam_song)
+
+spam_song.find(search_word)
+print(spam_song[400:404])
+print(spam_song[380:424])
+
+position = 0
+spam_positions = []
+while position < len(spam_song):
+    found_spam = spam_song.find(search_word, position)
+    if found_spam == -1:
+        break
+    print(spam_song[(found_spam-10):(found_spam+14)])
+    spam_positions.append(found_spam)
+    position = found_spam + 1
+print(spam_positions)
+len(spam_positions)
+
+spam_song.count("spam")
+
