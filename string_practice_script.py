@@ -99,3 +99,19 @@ print(",".join(example_csv_line))
 # print(",".join([1, 2, 3, 4])) # this fails because .join() only joins strings
 print(",".join([str(1), str(2), str(3), str(4)]))
 
+# removes
+
+my_courses = ["INST126", "INST314", "462", "STAT100"]
+"INST126".removeprefix("INST")
+"126".removeprefix("INST")
+
+course_numbers = []
+for course in my_courses:
+    course_number = course.removeprefix("INST")
+    course_numbers.append(course_number)
+print(course_numbers)
+
+# remove suffix works the same way, for the end of the string
+print("filename.txt".removesuffix(".txt"))
+
+######################################
