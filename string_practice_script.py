@@ -115,3 +115,13 @@ print(course_numbers)
 print("filename.txt".removesuffix(".txt"))
 
 ######################################
+# replace() examples
+
+"spam song, spam spam".replace("spam", "Treet")
+"spam song, spam spam".replace("spam", "Treet", 2)
+
+with open("spam_song.txt") as fc:
+    spam_text = fc.read()
+
+treet_text = spam_text.replace("spam", "Treet")
+print(treet_text)
