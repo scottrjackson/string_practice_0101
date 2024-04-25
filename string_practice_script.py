@@ -56,9 +56,10 @@ while position < len(spam_song):
     spam_positions.append(found_spam)
     position = found_spam + 1
 print(spam_positions)
-len(spam_positions)
 
+len(spam_positions)
 spam_song.count("spam")
 
+###############################
+# starting 4/25 lecture with endswith and startswith
 
-# vhsjvkjvb
